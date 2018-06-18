@@ -1,0 +1,11 @@
+[tasks.readme]
+install_crate = "readme"
+command = "cargo"
+args = ["readme", "-o", "README.md"]
+
+[tasks.all]
+dependencies = [
+    "build",
+    "test",
+    "readme",
+]
